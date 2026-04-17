@@ -555,3 +555,27 @@ input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin
 .tp-slider-row input[type=range] { accent-color: var(--mint); }
 .tp-val { font-family: var(--mono); font-size: 11px; color: var(--mint); min-width: 28px; }
 .tp-hint { font-family: var(--mono); font-size: 10px; color: var(--text-mute); letter-spacing: 0.06em; }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 12px;
+  }
+  .bet-rail { max-height: none; order: 2; }
+  .stage { order: 1; min-height: 60vh; }
+  .stage-inner { padding: 18px; }
+  .shooter-zone { padding: 16px; }
+  .dice-row { gap: 10px; }
+  .flash-msg { font-size: 18px; }
+}
+@media (max-width: 520px) {
+  .topbar { padding: 10px 12px; gap: 8px; }
+  .brand-word { display: none; }
+  .game-tag { display: none; }
+  .balance-pill { padding: 5px 10px; }
+  .sb-grid-2 { grid-template-columns: 1fr 1fr; }
+  .flash-msg { font-size: 15px; }
+  .flash-glyph { font-size: 16px; }
+}
