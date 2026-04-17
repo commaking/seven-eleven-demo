@@ -294,12 +294,12 @@ function App() {
             <AmountInput value={wager} onChange={setWager} label="WAGER" disabled={phase !== PHASES.idle} />
             <div className="field-row">
               <div className="field-col">
-                <label className="field-label">WIN (1:1)</label>
-                <div className="readout">{(wager * 2).toFixed(2)}</div>
+                <label className="field-label">IF YOU WIN</label>
+                <div className="readout accent">+{wager.toFixed(2)}</div>
               </div>
               <div className="field-col">
-                <label className="field-label">HOUSE EDGE</label>
-                <div className="readout accent">1.41%</div>
+                <label className="field-label">IF YOU LOSE</label>
+                <div className="readout">−{wager.toFixed(2)}</div>
               </div>
             </div>
           </div>
